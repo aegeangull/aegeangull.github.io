@@ -1,0 +1,116 @@
+body {
+    background-color: hsl(256, 97%, 12%);
+    color: hsl(94, 97%, 62%);
+    font-family: Arial, sans-serif;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+  }
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+form input {
+    font-family: Arial, sans-serif;
+    width: 200px;
+    height: 30px;
+    outline: 0;
+    color: #ccc;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border: none;
+    border-collapse: separate;
+    padding: 10px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    border-radius:15px;
+    border-right: 0.5px solid black;
+    box-shadow: 0 0 10px rgba(0, 255, 234, 0.732);
+    transition: all 0.2s;
+}
+
+form input:not(:first-child) {
+    margin-left: 30px;
+}
+
+button {
+    margin-left: 30px;
+    color: hsl(0, 0%, 16%);
+    font-size: 1em;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    width: 120px;
+    height: 37px;
+    border: none;
+    border-collapse: separate;
+    -moz-border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -khtml-border-radius: 17px;
+    border-radius:17px;
+    outline: none;
+    background: linear-gradient(to right, #f06, #f90);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    transition: all 0.2s;
+}
+
+form input:focus,
+button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.userInfo {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#skillChart,
+#auditChart,
+#tasksChart {
+    display: none;
+}
+
+#chartButtons {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally */
+    margin-top: 20px; /* Add spacing */
+}
+
+#chartButtons button {
+    margin: 0 10px; /* Add spacing between buttons */
+}
+
+.userSKills {
+    margin: 0 auto;
+    width: 40%;
+    padding: 10px;
+}
+
+.auditsCharts {
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+}
+
+.xpcount {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.hidden {
+    display: none;
+}

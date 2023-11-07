@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GraphQL</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <form id="loginForm" class="loginForm" method="post">
+        <label for="title">Log into kood/Johvi account</label><br><br>
+        <input type="text" id="username" name="username"><br><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit">Log in</button>
+    </form>
+    <button id="logout" class="logout hidden">Logout</button>
+    <br>
+    <div id="userInfo" class="userInfo">
+        <h1 id="name"></h1>
+        <h2 id="email"></h2>
+        <h2 id="level"></h2>
+        <h2 id="lastTask"></h2>
+    </div>
+    <div id="charts" class="charts hidden">
+        <div id="chartButtons">
+            <button id="skillsButton">Skills</button>
+            <button id="auditButton">Audits</button>
+            <button id="tasksButton">XP</button>
+        </div>
+        <div id="skillChart" class="userSKills"></div>
+        <div id="auditChart" class="auditsCharts"></div>
+        <div id="tasksChart" class="xpcount"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
